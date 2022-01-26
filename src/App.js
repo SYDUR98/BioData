@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import BioData from './components/BioData';
+import Blog from './components/blog';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <BioData
+     name = "sydur"
+     gmail = "md444sydur@gmail.com"
+     phone = "01746077593"
+     github = "sdjklfjk"
+     skills = {["python","js"]}
+     intersts = {["coding","leasing song","Kurulus Osman seris","the release eartugrul"]}
+     />
+     <Blog
+     name = "sydur"
+     engi = "computer engineer"
+     />
     </div>
   );
 }
